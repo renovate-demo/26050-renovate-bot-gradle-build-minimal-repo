@@ -1,5 +1,5 @@
-# renovate-bot-gradle-build-minimal-repo
-Minimal repo for Renovate bot [issue 13251](https://github.com/renovatebot/renovate/issues/13251).
+# Renovate Bot Gradle build minimal repo
+Minimal repo for Renovate Bot [issue 13251](https://github.com/renovatebot/renovate/issues/13251).
 
 ## Expected Behaviour
 
@@ -13,10 +13,10 @@ wrapper {
 }
 ```
 
-This is a Gradle task for installing a wrapper.
+This is a Gradle task for installing the wrapper.
 It's often used in projects and CI for making sure the wrapper is always correctly.
 Many people also don't use it.
 If it's present, it should have the same version upgrade as in `gradle-wrapper.properties`.
-The property `distributionType` isn;t required, but if present should be preserved.
+The property `distributionType` isn't required, but should be preserved.
 
 The task can be tested with `./gradlew wrapper`.
